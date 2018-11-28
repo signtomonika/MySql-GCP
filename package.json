@@ -1,0 +1,39 @@
+{
+  "name": "gcloud-mysql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "deploy": "gcloud app deploy app.standard.yaml",
+    "start": "node server.js",
+    "test": "SET \"NODE_ENV=test\" && mocha test/*.test.js",
+    "test-watch": "nodemon --exec \"npm test\""
+  },
+  "author": "Monika Ravi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "nconf": "^0.10.0",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "^2.3.0",
+    "semistandard": "^12.0.1",
+    "expect": "^23.6.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "supertest": "^3.3.0"
+  },
+  "cloud-repo-tools": {
+    "test": {
+      "app": {
+        "msg": "Hello, world!"
+      }
+    },
+    "requiresKeyFile": true,
+    "requiresProjectId": true
+  }
+}
