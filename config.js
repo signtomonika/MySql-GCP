@@ -32,7 +32,7 @@ nconf
     'PORT'
   ])
   // 3. Config file
-  .file({ file: path.join(__dirname, '..','mysql_config.json') })
+  .file({ file: path.join(__dirname, 'config.json') })
   // 4. Defaults
   .defaults({
     // dataBackend can be 'datastore' or 'cloudsql'. Be sure to
