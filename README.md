@@ -21,11 +21,13 @@ This is Sample Application for using GCLOUD MySQL in NodeJS Application and depl
     * Configure Gcloud Connection. Refer [Documentation](https://cloud.google.com/sql/docs/mysql/configure-ip)
     * Use `Connect To Instance` details present in [GCLOUD MYSQL Instance Detail](https://console.cloud.google.com/sql/instances) to connect to server via client
 
-    * Configure NodeJS Application to use GCLOUD MySQL
+* Run the scripts `classicmodels.sql` and `classicmodelsTest.sql` from client
 
-        * Create file `config.json` in the below format in "Root" folder
+* Configure NodeJS Application to use GCLOUD MySQL
 
-           ````json
+    * Create file `config.json` in the below format in "Root" folder
+
+        ````json
                 {  
                 "MYSQL_USER": "server user name",  
                 "MYSQL_PASSWORD": "password",  
@@ -33,7 +35,7 @@ This is Sample Application for using GCLOUD MySQL in NodeJS Application and depl
                 "DATABASE_NAME": "database name"  
                 }   
 
-           ````
+        ````
        
 ### Local Run :computer:
 
