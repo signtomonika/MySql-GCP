@@ -5,8 +5,8 @@ This is Sample Application for using GCLOUD MySQL in NodeJS Application and depl
 ### Contents
 
 * [Prerequisites](#prerequisites)
-* [Local Run](#local-run-:computer:)
-* [Testing](#testing-:thumbsup:)
+* [Local Run](#local-run)
+* [Testing](#testing)
 * [GCLOUD Deploy](#gcloud-deploy)
 
 ### Prerequisites
@@ -25,7 +25,7 @@ This is Sample Application for using GCLOUD MySQL in NodeJS Application and depl
 
         * Create file `config.json` in the below format in "Root" folder
 
-                ````json
+           ````json
                 {  
                 "MYSQL_USER": "server user name",  
                 "MYSQL_PASSWORD": "password",  
@@ -33,7 +33,7 @@ This is Sample Application for using GCLOUD MySQL in NodeJS Application and depl
                 "DATABASE_NAME": "database name"  
                 }   
 
-                ````
+           ````
        
 ### Local Run :computer:
 
