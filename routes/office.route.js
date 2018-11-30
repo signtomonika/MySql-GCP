@@ -1,9 +1,9 @@
-const { office } = require('../model/office.model');
+const { office } = require('../model/read.office');
 
 module.exports = (app) => {
 
 
-    /**** GET USERS DETAIL ****/
+    /**** GET OFFICE SUMMARY ****/
 
     app.get('/office', (req, res) => {
 
@@ -13,7 +13,7 @@ module.exports = (app) => {
 
             (data) => {
 
-                res.send(JSON.stringify(data, undefined, 2));
+                res.send(JSON.parse(JSON.stringify(data, undefined, 2)));
 
             },
 
@@ -30,5 +30,7 @@ module.exports = (app) => {
 
 
     });
+
+
 
 }

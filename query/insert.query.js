@@ -1,7 +1,7 @@
 const { Connection } = require('../connection');
 
 
-var bulkInsert = (query, values) => {
+var insert = (query, values) => {
 
 
 
@@ -51,6 +51,6 @@ var bulkInsert = (query, values) => {
 
 module.exports = {
 
-    bulkInsert
+    insert
 };
 

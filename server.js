@@ -38,7 +38,9 @@ app.get('/', (req, res) => {
 
 require('./routes/office.route')(app);
 
-//require('./routes/inspect.route')(app);
+require('./routes/task.route')(app);
+
+require('./routes/customer.route')(app);
 
 //Port
 

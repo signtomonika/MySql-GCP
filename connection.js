@@ -2,8 +2,6 @@
 const mysql = require('mysql');
 const config = require('./config');
 
-const {testConfig} = require('./test/config');
-
 class Connection {
 
   constructor() {
@@ -44,10 +42,10 @@ class Connection {
       //Test Server
 
       const options = {
-        user: testConfig.MYSQL_USER,
-        password: testConfig.MYSQL_PASSWORD,
-        database: testConfig.DATABASE_NAME,
-        host: testConfig.HOST_NAME
+        user: config.get('MYSQL_USER'),
+        password: config.get('MYSQL_PASSWORD'),
+        database: 'classicmodels_Test',
+        host: '35.230.36.80'
       };
 
      //MySql Connection Object
